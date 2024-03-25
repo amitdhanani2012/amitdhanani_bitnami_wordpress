@@ -1,5 +1,6 @@
 FROM bitnami/wordpress
 USER root
+RUN apt-get update && apt-get -y install  curl
 ENV AMIT_S3_BUCKET "s3-upload-test-amit"
 ENV AMIT_S3_REGION "us-west-2"
 COPY ./download-extra.sh /. 
