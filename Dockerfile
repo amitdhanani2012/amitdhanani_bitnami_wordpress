@@ -9,5 +9,7 @@ RUN chmod 755 /download-extra.sh
 RUN chmod 755 /opt/bitnami/scripts/wordpress/entrypoint.sh
 RUN chown root.root /download-extra.sh
 RUN chown root.root /opt/bitnami/scripts/wordpress/entrypoint.sh
+HEALTHCHECK  --interval=300s --timeout=60s --retries=5 --start-period=300s \
+   CMD curl --fail http://localhost:8080 || exit 1 
 USER 1001
  

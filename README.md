@@ -1,6 +1,6 @@
 Here I use bitnami/wordpress image and replace entrypoint.sh inside Docker image. 
 
-I also installed curl command which needed for health check during ecs task health check
+I also installed curl command which needed for health check during ecs task health check also added HEALTHCHECK
 
 entrypoint.sh has /download-extra.sh 
 
