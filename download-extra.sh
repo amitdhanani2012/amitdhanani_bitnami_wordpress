@@ -12,3 +12,4 @@ require_once __DIR__ . '/vendor/autoload.php';\\n\
 define( 'S3_UPLOADS_BUCKET' , '$AMIT_S3_BUCKET' );\\n\
 define( 'S3_UPLOADS_REGION', '$AMIT_S3_REGION' );\\n" /opt/bitnami/wordpress/wp-config.php
 /opt/bitnami/wp-cli/bin/wp plugin is-active s3-uploads || /opt/bitnami/wp-cli/bin/wp plugin activate s3-uploads
+/opt/bitnami/wp-cli/bin/wp s3-uploads verify
