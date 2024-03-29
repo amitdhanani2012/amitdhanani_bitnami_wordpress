@@ -3,6 +3,7 @@ set +o errexit
 set +o nounset
 set +o pipefail
 set -x
+export AWS_CONTAINER_CREDENTIALS_RELATIVE_URI=/get-credentials?a=1
 cd /opt/bitnami/wordpress/
 echo '{ "require": { "humanmade/s3-uploads":"*" } }' >composer.json
 composer config --no-plugins allow-plugins.composer/installers true
