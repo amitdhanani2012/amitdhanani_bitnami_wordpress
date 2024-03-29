@@ -9,3 +9,5 @@ entrypoint.sh has /download-extra.sh
 
 /download-extra.sh also change wp-config.php for s3 parameter and activate s3-uploads plugin
 
+Any new plugin can only be installed by /download-extra.sh during container initialization if you don't want to use persistent storage.
+
